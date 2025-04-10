@@ -467,6 +467,12 @@ h4, h5, h6, .h4, .h5, .h6 {
     color: var(--bs-primary) !important;
 }
 /*** Footer End ***/
+.alert{
+    width: 30%;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
 
 
 
