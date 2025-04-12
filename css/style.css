@@ -100,6 +100,11 @@ h4, h5, h6, .h4, .h5, .h6 {
 .nav-bar {
     background: var(--bs-light);
     border-bottom: 1px solid rgba(0, 0, 0, .05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -247,7 +252,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     position: relative;
     height: 100%;
     min-height: 400px;
-    background: linear-gradient(rgba(254, 218, 154, 0.1), rgba(254, 218, 154, 0.1)), url(../img/fact.jpg);
+    background: linear-gradient(rgba(254, 218, 154, 0.1), rgba(254, 218, 154, 0.1)), url(../img/hero.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -473,6 +478,14 @@ h4, h5, h6, .h4, .h5, .h6 {
     right: 0px;
     top: 0px;
 }
+
+.team-item img {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của container */
+    height: 320px; /* Đặt chiều cao cố định cho tất cả ảnh */
+    object-fit: cover; /* Đảm bảo hình ảnh được cắt gọn để phù hợp với container */
+}
+
+
 
 
 

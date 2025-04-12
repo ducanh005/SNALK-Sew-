@@ -108,6 +108,7 @@
     });
 
 })(jQuery);
+
 const form = document.querySelector('form[class="dat-lich"]')
 if(form){
     console.log(form)
@@ -153,3 +154,4 @@ if(form){
     })
 
 }
+
