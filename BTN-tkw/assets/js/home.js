@@ -21,7 +21,7 @@ const $tabPanels = document.querySelectorAll("[data-tab-panel]");
 let [$lastActiveTabPanel] = $tabPanels;
 let [$lastActiveTabBtn] = $tabBtns
 
-addEventOnElement($tabBtns, "click", function () {
+window.addEventOnElements($tabBtns, "click", () => {
     $lastActiveTabPanel.setAttribute("hidden", "");
     $lastActiveTabBtn.setAttribute("aria-selected", false);
     $lastActiveTabBtn.setAttribute("tabindex", -1);
@@ -135,7 +135,8 @@ for (const [index, $sliderSection] of $sliderSections.entries()) {
                     totalTime: cookingTime,
                     uri
                 }
-            } = item
+            } = item;
+
             const recipeId = uri.slice(uri.lastIndexOf("_") + 1)
             // console.log(recipeId)
             const isSaved = window.localStorage.getItem(`cookio-recipe${recipeId}`)
@@ -163,8 +164,8 @@ for (const [index, $sliderSection] of $sliderSections.entries()) {
                                     </div>
                                 </div>
                                 </div>
-            `
-            $sliderWrapper.appendChild($sliderItem)
+            `;
+            $sliderWrapper.appendChild($sliderItem);
         })
         $sliderWrapper.innerHTML+=`
         <li class="slider-item" data-slider-item>

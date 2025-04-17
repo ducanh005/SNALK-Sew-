@@ -1,7 +1,7 @@
 "use strict";
 import { fetchData } from "./api.js";
 
-window.addEventOnElement = ($elements, eventType, callback) => {
+window.addEventOnElements = ($elements, eventType, callback) => {
     for (const $element of $elements) {
         $element.addEventListener(eventType, callback);
     }
