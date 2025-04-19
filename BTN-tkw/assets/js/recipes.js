@@ -118,13 +118,13 @@ window.addEventListener("scroll", () => {
 const /* {NodeElement} */ $gridList = document.querySelector("[data-grid-list]");
 const /* {NodeElement} */ $loadMore = document.querySelector("[data-load-more]");
 const /* {Array}  */ defaultQueries = [
-        ["mealType", "breakfast"],
-        ["mealType", "dinner"],
-        ["mealType", "lunch"],
-        ["mealType", "snack"],
-        ["mealType", "teatime"],
-        ...cardQueries,
-    ];
+    ["mealType", "breakfast"],
+    ["mealType", "dinner"],
+    ["mealType", "lunch"],
+    ["mealType", "snack"],
+    ["mealType", "teatime"],
+    ...cardQueries,
+];
 
 $gridList.innerHTML = $skeletonCard.repeat(20);
 let /* {String} */ nextPageUrl = "";
@@ -148,18 +148,16 @@ const renderRecipe = (data) => {
             </figure>
             <div class="card-body">
                 <h3 class="title-small">
-                    <a href="./detail.html" class="card-link">${title}</a>
+                    <a href="./detail.html?id=recipe_${recipeId}" class="card-link">${title}</a>
                 </h3>
                 <div class="meta-wrapper">
                     <div class="meta-item">
                         <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
-                        <span class="label-medium">${
-                            getTime(cookingTime).time || "<1"
-                        } ${getTime(cookingTime).timeUnit}</span>
+                        <span class="label-medium">${getTime(cookingTime).time || "<1"
+            } ${getTime(cookingTime).timeUnit}</span>
                     </div>
-                    <button class="icon-btn has-state ${
-                        isSaved ? "saved" : "removed"
-                    }" aria-label="Add to saved recipes" onclick="saveRecipe(this,'${recipeId}')">
+                    <button class="icon-btn has-state ${isSaved ? "saved" : "removed"
+            }" aria-label="Add to saved recipes" onclick="saveRecipe(this,'${recipeId}')">
                         <span class="material-symbols-outlined bookmark-add" aria-hidden="true">bookmark_add</span>
                         <span class="material-symbols-outlined bookmark" aria-hidden="true">bookmark</span>
                     </button>

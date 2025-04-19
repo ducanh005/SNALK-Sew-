@@ -89,18 +89,16 @@ const addTabContent = ($currentTabBtn, $currentTabPanel) => {
                     </figure>
                     <div class="card-body">
                         <h3 class="title-small">
-                            <a href="./detail.html" class="card-link">${title}</a>
+                            <a href="./detail.html?id=recipe_${recipeId}" class="card-link">${title}</a>
                         </h3>
                         <div class="meta-wrapper">
                             <div class="meta-item">
                                 <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
-                                <span class="label-medium">${
-                                    getTime(cookingTime).time || "<1"
-                                } ${getTime(cookingTime).timeUnit}</span>
+                                <span class="label-medium">${getTime(cookingTime).time || "<1"
+                    } ${getTime(cookingTime).timeUnit}</span>
                             </div>
-                            <button class="icon-btn has-state ${
-                                isSaved ? "saved" : "removed"
-                            }" aria-label="Add to saved recipes" onclick="saveRecipe(this,'${recipeId}')">
+                            <button class="icon-btn has-state ${isSaved ? "saved" : "removed"
+                    }" aria-label="Add to saved recipes" onclick="saveRecipe(this,'${recipeId}')">
                                 <span class="material-symbols-outlined bookmark-add" aria-hidden="true">bookmark_add</span>
                                 <span class="material-symbols-outlined bookmark" aria-hidden="true">bookmark</span>
                             </button>
@@ -114,8 +112,8 @@ const addTabContent = ($currentTabBtn, $currentTabPanel) => {
             $currentTabPanel.appendChild($girdList);
             $currentTabPanel.innerHTML += `
        <a href="./recipes.html?mealType=${$currentTabBtn.textContent
-           .trim()
-           .toLowerCase()}" class="btn btn-secondary label-large has-state">Show more</a>`;
+                    .trim()
+                    .toLowerCase()}" class="btn btn-secondary label-large has-state">Show more</a>`;
         }
     );
 };
@@ -125,9 +123,8 @@ const $sliderSections = document.querySelectorAll("[data-slider-section]");
 // console.log($sliderSections)
 for (const [index, $sliderSection] of $sliderSections.entries()) {
     $sliderSection.innerHTML = `<div class="container">
-                    <h2 class="section-title headline-small" id="slider-label-1">Latest ${
-                        cuisineType[index]
-                    } Recipes</h2>
+                    <h2 class="section-title headline-small" id="slider-label-1">Latest ${cuisineType[index]
+        } Recipes</h2>
                     <div class="slider">
                         <ul class="slider-wrapper" data-slider-wrapper>
                         ${`<li class="slider-item">${$skeletonCard}</li>`.repeat(10)}
@@ -159,13 +156,11 @@ for (const [index, $sliderSection] of $sliderSections.entries()) {
                     <div class="meta-wrapper">
                         <div class="meta-item">
                             <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
-                            <span class="label-medium">${
-                                getTime(cookingTime).time || "<1"
-                            } ${getTime(cookingTime).timeUnit}</span>
+                            <span class="label-medium">${getTime(cookingTime).time || "<1"
+                } ${getTime(cookingTime).timeUnit}</span>
                         </div>
-                        <button class="icon-btn has-state ${
-                            isSaved ? "saved" : "removed"
-                        }" aria-label="Add to saved recipes" onclick="saveRecipe(this,${recipeId})">
+                        <button class="icon-btn has-state ${isSaved ? "saved" : "removed"
+                }" aria-label="Add to saved recipes" onclick="saveRecipe(this,${recipeId})">
                             <span class="material-symbols-outlined bookmark-add" aria-hidden="true">bookmark_add</span>
                             <span class="material-symbols-outlined bookmark" aria-hidden="true">bookmark</span>
                         </button>
@@ -178,8 +173,8 @@ for (const [index, $sliderSection] of $sliderSections.entries()) {
         $sliderWrapper.innerHTML += `
         <li class="slider-item" data-slider-item>
                                 <a href="./recipes.html?cuisineType=${cuisineType[
-                                    index
-                                ].toLowerCase()}" class="load-more-card has-state">
+                index
+            ].toLowerCase()}" class="load-more-card has-state">
                                     <span class="label-large">Show more</span>
                                     <span class="material-symbols-outlined" aria-hidden="true">navigate_next</span>
                                 </a>
