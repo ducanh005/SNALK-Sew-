@@ -1,0 +1,36 @@
+**Giới thiệu Ứng dụng Cook.io**
+
+**1. Chức năng:**
+
+Cook.io là một ứng dụng web giúp người dùng:
+- Tìm kiếm công thức nấu ăn theo tên món hoặc nguyên liệu.
+- Khám phá các công thức nấu ăn đa dạng từ nhiều nền ẩm thực khác nhau.
+- Lọc công thức dựa trên nhiều tiêu chí như: thời gian nấu, số lượng nguyên liệu, lượng calo, chế độ ăn kiêng (ăn chay, thuần chay, ít béo,...), loại bữa ăn, loại món ăn, và nền ẩm thực.
+- Xem chi tiết từng công thức bao gồm: hình ảnh, danh sách nguyên liệu, hướng dẫn (nếu có từ API), thông tin dinh dưỡng (calo, thành phần), thời gian nấu, khẩu phần.
+- Lưu lại các công thức yêu thích vào bộ nhớ cục bộ (localStorage) để dễ dàng truy cập lại.
+- Chuyển đổi giao diện sáng/tối.
+
+**2. Công nghệ sử dụng:**
+
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+- **API:** Edamam Recipe Search API để lấy dữ liệu công thức nấu ăn.
+- **Thư viện/Framework CSS (Tiềm năng):** (Mặc dù không được liệt kê rõ ràng, có thể sử dụng Font Awesome cho icons).
+- **Thiết kế:** Giao diện hiện đại, responsive, tối ưu cho cả máy tính và thiết bị di động.
+
+**3. Tính năng có thể phát triển thêm:**
+
+- **Tài khoản người dùng:** Cho phép đăng ký, đăng nhập để lưu công thức trên cloud, đồng bộ giữa các thiết bị.
+- **Bình luận và đánh giá:** Cho phép người dùng bình luận và đánh giá các công thức.
+- **Tạo công thức:** Cho phép người dùng tự tạo và chia sẻ công thức của riêng họ.
+- **Lập kế hoạch bữa ăn:** Giúp người dùng lên kế hoạch bữa ăn hàng tuần.
+- **Danh sách mua sắm:** Tự động tạo danh sách nguyên liệu cần mua dựa trên công thức đã chọn hoặc kế hoạch bữa ăn.
+- **Cải thiện bộ lọc:** Thêm nhiều tùy chọn lọc nâng cao hơn.
+- **Tích hợp mạng xã hội:** Chia sẻ công thức lên mạng xã hội.
+- **Đa ngôn ngữ:** Hỗ trợ nhiều ngôn ngữ khác nhau.
+
+**4. Mục đích sử dụng:**
+
+- Cung cấp một công cụ tiện lợi để tìm kiếm và khám phá công thức nấu ăn.
+- Giúp người dùng dễ dàng quản lý và lưu trữ các công thức yêu thích.
+- Khuyến khích việc nấu ăn tại nhà bằng cách cung cấp nguồn cảm hứng và thông tin chi tiết về các món ăn.
+- Hỗ trợ người dùng có nhu cầu ăn uống đặc biệt (ăn kiêng, dị ứng) tìm kiếm công thức phù hợp.
