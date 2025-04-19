@@ -1035,7 +1035,7 @@ main {
     transform: rotate(180deg);
 }
 
-.accordion-btn[aria-expanded="true"]+.accordion-content {
+.accordion-btn[aria-expanded="true"] + .accordion-content {
     grid-template-rows: 1fr;
     padding-block: 8px 12px;
 }
@@ -1082,8 +1082,6 @@ main {
     align-items: center;
     margin-block-end: 16px;
 }
-
-
 
 /** Filter btn */
 .btn-filter {
@@ -1136,13 +1134,6 @@ main {
     font-weight: var(--weight-medium);
     opacity: 0.7;
 }
-
-
-
-
-
-
-
 
 /** Badge */
 .badge {
@@ -1277,6 +1268,14 @@ main {
     line-height: 40px;
 }
 
+.social-list {
+    display: flex;
+    font-size: 14px;
+    padding: 0 8px;
+    gap: 24px;
+    justify-content: center;
+}
+
 /*Media*/
 
 /**
@@ -1312,7 +1311,6 @@ Reponsive for larger than 600px screen
         width: 100%;
     }
 
-
     .display-large,
     .display-medium {
         line-height: 44px;
@@ -1321,7 +1319,6 @@ Reponsive for larger than 600px screen
     .display-small {
         line-height: 36px;
     }
-
 
     .title-small {
         font-size: 1.6rem;
@@ -1335,11 +1332,11 @@ Reponsive for larger than 600px screen
     }
 
     .search-field {
-        height: 72px;
+        height: 64px;
     }
 
     .search-wrapper .search-submit {
-        height: 100px;
+        height: auto;
     }
 
     .hero .search-wrapper {
@@ -1383,5 +1380,4 @@ Reponsive for larger than 600px screen
     .detail-stats .stats-item {
         padding-block: 20px;
     }
-
 }
