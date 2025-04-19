@@ -25,7 +25,7 @@ if (savedRecipes.length) {
         } = JSON.parse(window.localStorage.getItem(savedRecipes));
 
         // console.log(JSON.parse(window.localStorage.getItem(savedRecipes)));
-        const recipeId = uri.slice(uri.lastIndexOf("_") + 1);  
+        const recipeId = uri.slice(uri.lastIndexOf("_") + 1);
         console.log(recipeId);
         const isSaved = window.localStorage.getItem(`cookio-recipe${recipeId}`);
         const $card = document.createElement("div");
@@ -39,18 +39,16 @@ if (savedRecipes.length) {
             </figure>
             <div class="card-body">
                 <h3 class="title-small">
-                    <a href="./detail.html" class="card-link">${title}</a>
+                    <a href="./detail.html?id=recipe_${recipeId}" class="card-link">${title}</a>
                 </h3>
                 <div class="meta-wrapper">
                     <div class="meta-item">
                         <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
-                        <span class="label-medium">${
-                            getTime(cookingTime).time || "<1"
-                        } ${getTime(cookingTime).timeUnit}</span>
+                        <span class="label-medium">${getTime(cookingTime).time || "<1"
+            } ${getTime(cookingTime).timeUnit}</span>
                     </div>
-                    <button class="icon-btn has-state ${
-                        isSaved ? "saved" : "removed"
-                    }" aria-label="Add to saved recipes" onclick="saveRecipe(this,'${recipeId}')">
+                    <button class="icon-btn has-state ${isSaved ? "saved" : "removed"
+            }" aria-label="Add to saved recipes" onclick="saveRecipe(this,'${recipeId}')">
                         <span class="material-symbols-outlined bookmark-add" aria-hidden="true">bookmark_add</span>
                         <span class="material-symbols-outlined bookmark" aria-hidden="true">bookmark</span>
                     </button>
