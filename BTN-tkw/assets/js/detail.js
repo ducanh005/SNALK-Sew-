@@ -82,8 +82,8 @@ fetchData(null, data => {
 
                 <button class="btn btn-secondary has-state has-icon ${isSaved ? "saved" : "removed"}" onclick="saveRecipe(this, '${recipeId}')">
 
-                    <span class="material-symbols-outlined" aria-hidden="true">bookmark_add</span>
-                    <span class="material-symbols-outlined" aria-hidden="true">bookmark</span>
+                    <span class="material-symbols-outlined bookmark-add" aria-hidden="true">bookmark_add</span>
+                    <span class="material-symbols-outlined bookmark" aria-hidden="true">bookmark</span>
                     <span class="label-large save-text">Save</span>
                     <span class="label-large unsaved-text">Unsaved</span>
 
