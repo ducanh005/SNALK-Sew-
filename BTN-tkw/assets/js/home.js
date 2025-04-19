@@ -19,7 +19,7 @@ const $tabPanels = document.querySelectorAll("[data-tab-panel]");
 let [$lastActiveTabPanel] = $tabPanels;
 let [$lastActiveTabBtn] = $tabBtns;
 
-window.addEventOnElements($tabBtns, "click", () => {
+window.addEventOnElements($tabBtns, "click", function () {
     $lastActiveTabPanel.setAttribute("hidden", "");
     $lastActiveTabBtn.setAttribute("aria-selected", false);
     $lastActiveTabBtn.setAttribute("tabindex", -1);
@@ -28,8 +28,7 @@ window.addEventOnElements($tabBtns, "click", () => {
     const $currentTabPanel = document.querySelector(
         `#${this.getAttribute("aria-controls")}[data-tab-panel]`
     );
-    // console.log($currentTabBtn)
-    // console.log($currentTabPanel)
+
     $currentTabPanel.removeAttribute("hidden");
     this.setAttribute("aria-selected", true);
     this.setAttribute("tabindex", 0);
