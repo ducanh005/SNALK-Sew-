@@ -71,7 +71,7 @@ fetchData(null, data => {
 
     $detailContainer.innerHTML = `
         <figure class="detail-banner img-holder">
-            <img src="${bannerUrl}" width="${width}" height="${height}""
+            <img src="${bannerUrl}" width="${width}" height="${height}"
                 alt="${title}" class="img-cover">
         </figure>
 

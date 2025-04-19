@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Saved recipes - Cook.io</title>
+    <title>Cook.io</title>
     <meta name="title" content="Cook.io - Cooking made easy." />
     <meta name="description" content="This is a recipe application made by codewithsadee" />
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
@@ -31,7 +31,7 @@
 
 <body>
     <header class="header">
-        <a href="/BTN-tkw/" class="logo">
+        <a href="/" class="logo">
             <img src="./assets/images/logo-light.svg" width="156" height="32" alt="Cook.io" class="logo-light" />
             <img src="./assets/images/logo-dark.svg" width="156" height="32" alt="Cook.io" class="logo-dark" />
         </a>
@@ -63,6 +63,7 @@
 
     <nav class="mobile-nav" aria-label="primary">
         <ul class="nav-list">
+
             <li class="nav-item">
                 <a href="./recipes.html" class="nav-link">
                     <span class="item-icon">
@@ -84,7 +85,7 @@
             </li>
 
             <li class="nav-item">
-                <a href="./saved-recipes.html" class="nav-link" aria-current="true">
+                <a href="./saved-recipes.html" class="nav-link">
                     <span class="item-icon">
                         <span class="material-symbols-outlined" aria-hidden="true">book</span>
 
@@ -95,8 +96,61 @@
         </ul>
     </nav>
 
-    <main>
-        <article class="article container saved-recipes-page" data-saved-recipe-container></article>
+    <main class="detail-page-main">
+        <article class="article container detail-page" data-detail-container>
+
+            <div class="detail-banner detail-banner-skeleton skeleton">
+
+            </div>
+
+            <div class="detail-content detail-content-skeleton">
+
+                <div class="title-wrapper">
+                    <div class="title-skeleton skeleton"></div>
+                </div>
+
+                <div class="detail-author text-skeleton skeleton"></div>
+
+                <div class="detail-stats">
+
+                    <div class="stats-item">
+                        <span class="skeleton title-skeleton"></span>
+
+                        <span class="skeleton text-skeleton"></span>
+                    </div>
+
+                    <div class="stats-item">
+                        <span class="skeleton title-skeleton"></span>
+
+                        <span class="skeleton text-skeleton"></span>
+                    </div>
+
+                    <div class="stats-item">
+                        <span class="skeleton title-skeleton"></span>
+
+                        <span class="skeleton text-skeleton"></span>
+                    </div>
+
+                </div>
+
+                <div class="tag-list">
+                    <div class="filter-chip skeleton filter-chip-skeleton"></div>
+                    <div class="filter-chip skeleton filter-chip-skeleton"></div>
+                    <div class="filter-chip skeleton filter-chip-skeleton"></div>
+                </div>
+
+                <div class="ingr-title skeleton title-skeleton"></div>
+
+                <div class="ingr-list">
+                    <div class="ingr-item skeleton text-skeleton"></div>
+                    <div class="ingr-item skeleton text-skeleton"></div>
+                    <div class="ingr-item skeleton text-skeleton"></div>
+                    <div class="ingr-item skeleton text-skeleton"></div>
+                </div>
+
+            </div>
+
+        </article>
     </main>
 
     <footer class="footer">
@@ -131,7 +185,7 @@
 
     <!-- luu y de script o cuoi body tranh bug nhe ae -->
     <script src="./assets/js/global.js" type="module"></script>
-    <script src="./assets/js/saved_recipes.js" type="module"></script>
+    <script src="./assets/js/detail.js" type="module"></script>
     <script src="./assets/js/api.js" type="module"></script>
 </body>
 

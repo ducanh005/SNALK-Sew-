@@ -58,7 +58,7 @@ $filterSubmit.addEventListener("click", () => {
 
     window.location = queries.length
         ? `?${queries.join("&").replace(/,/g, "=")}`
-        : "/BTN-tkw/recipes.html";
+        : "/recipes.html";
 });
 
 $filterSearch.addEventListener("keydown", (e) => {

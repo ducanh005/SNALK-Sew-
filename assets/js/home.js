@@ -6,7 +6,7 @@ const $searchField = document.querySelector("[data-search-field]");
 const $searchBtn = document.querySelector("[data-search-btn]");
 
 $searchBtn.addEventListener("click", function () {
-    if ($searchField.value) window.location = `/BTN-tkw/recipes.html?q=${$searchField.value}`;
+    if ($searchField.value) window.location = `/recipes.html?q=${$searchField.value}`;
 });
 
 $searchField.addEventListener("keydown", (e) => {
