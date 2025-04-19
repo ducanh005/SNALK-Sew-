@@ -594,6 +594,7 @@ Cook.io
 Restaurant-Style Pan Seared Salmon
 
 <span class="material-symbols-outlined" aria-hidden="true">bookmark_add</span>
+<span class="material-symbols-outlined" aria-hidden="true">bookmark</span>
 Save
 
 by Jenn Segal
