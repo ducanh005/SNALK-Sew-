@@ -142,9 +142,8 @@ const renderRecipe = (data) => {
         $card.classList.add("card");
         $card.style.animationDelay = `${100 * index}ms`;
 
-        $card.innerHTML = `
-            <figure class="card-media img-holder">
-                <img src="${image}" width="200" height="200" loading="lazy" alt="${title}" class="img-cover" >
+        $card.innerHTML = `<figure class="card-media img-holder">
+            <img src="${image}" width="200" height="200" loading="lazy" alt="${title}" class="img-cover" >
 
             </figure>
             <div class="card-body">
@@ -154,20 +153,18 @@ const renderRecipe = (data) => {
                 <div class="meta-wrapper">
                     <div class="meta-item">
                         <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
-                        <span class="label-medium">${getTime(cookingTime).time || "<1"} ${
-            getTime(cookingTime).timeUnit
-        }</span>
+                        <span class="label-medium">${
+                            getTime(cookingTime).time || "<1"
+                        } ${getTime(cookingTime).timeUnit}</span>
                     </div>
                     <button class="icon-btn has-state ${
                         isSaved ? "saved" : "removed"
-                    }" aria-label="Add to saved recipes" onclick="saveRecipe(this,${recipeId})">
+                    }" aria-label="Add to saved recipes" onclick="saveRecipe(this,'${recipeId}')">
                         <span class="material-symbols-outlined bookmark-add" aria-hidden="true">bookmark_add</span>
                         <span class="material-symbols-outlined bookmark" aria-hidden="true">bookmark</span>
                     </button>
                 </div>
-            </div>
-        `;
-
+            </div>`;
         $gridList.appendChild($card);
     });
 };
