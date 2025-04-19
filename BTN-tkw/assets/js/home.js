@@ -76,7 +76,6 @@ const addTabContent = ($currentTabBtn, $currentTabPanel) => {
                 } = data.hits[i];
 
                 const recipeId = uri.slice(uri.lastIndexOf("_") + 1);
-                console.log(recipeId);
                 const isSaved = window.localStorage.getItem(`cookio-recipe${recipeId}`);
                 const $card = document.createElement("div");
                 // console.log($card)
@@ -117,6 +116,7 @@ const addTabContent = ($currentTabBtn, $currentTabPanel) => {
         }
     );
 };
+
 addTabContent($lastActiveTabBtn, $lastActiveTabPanel);
 let cuisineType = ["Asian", "French"];
 const $sliderSections = document.querySelectorAll("[data-slider-section]");
@@ -151,7 +151,7 @@ for (const [index, $sliderSection] of $sliderSections.entries()) {
                 </figure>
                 <div class="card-body">
                     <h3 class="title-small">
-                        <a href="./detail.html" class="card-link">${title}</a>
+                        <a href="./detail.html?id=recipe_${recipeId}" class="card-link">${title}</a>
                     </h3>
                     <div class="meta-wrapper">
                         <div class="meta-item">
@@ -160,10 +160,10 @@ for (const [index, $sliderSection] of $sliderSections.entries()) {
                 } ${getTime(cookingTime).timeUnit}</span>
                         </div>
                         <button class="icon-btn has-state ${isSaved ? "saved" : "removed"
-                }" aria-label="Add to saved recipes" onclick="saveRecipe(this,${recipeId})">
-                            <span class="material-symbols-outlined bookmark-add" aria-hidden="true">bookmark_add</span>
-                            <span class="material-symbols-outlined bookmark" aria-hidden="true">bookmark</span>
-                        </button>
+                    }" aria-label="Add to saved recipes" onclick="saveRecipe(this,'${recipeId}')">
+                                <span class="material-symbols-outlined bookmark-add" aria-hidden="true">bookmark_add</span>
+                                <span class="material-symbols-outlined bookmark" aria-hidden="true">bookmark</span>
+                            </button>
                     </div>
                 </div>
                 </div>
