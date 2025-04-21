@@ -118,7 +118,7 @@ const addTabContent = ($currentTabBtn, $currentTabPanel) => {
 };
 
 addTabContent($lastActiveTabBtn, $lastActiveTabPanel);
-let cuisineType = ["Asian", "French"];
+let cuisineType = ["Japanese", "Chinese"];
 const $sliderSections = document.querySelectorAll("[data-slider-section]");
 // console.log($sliderSections)
 for (const [index, $sliderSection] of $sliderSections.entries()) {

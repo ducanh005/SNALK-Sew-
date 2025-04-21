@@ -118,11 +118,11 @@ window.addEventListener("scroll", () => {
 const /* {NodeElement} */ $gridList = document.querySelector("[data-grid-list]");
 const /* {NodeElement} */ $loadMore = document.querySelector("[data-load-more]");
 const /* {Array}  */ defaultQueries = [
-    ["mealType", "breakfast"],
+    ["mealType", "teatime"],
+    ["mealType", "snack"],
     ["mealType", "dinner"],
     ["mealType", "lunch"],
-    ["mealType", "snack"],
-    ["mealType", "teatime"],
+    ["mealType", "breakfast"],
     ...cardQueries,
 ];
 
