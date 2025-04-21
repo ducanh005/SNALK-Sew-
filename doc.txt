@@ -1,8 +1,8 @@
-**Giới thiệu Ứng dụng Cook.io**
+**Giới thiệu Ứng dụng SNALK**
 
 **1. Chức năng:**
 
-Cook.io là một ứng dụng web giúp người dùng:
+SNALK là một ứng dụng web giúp người dùng:
 - Tìm kiếm công thức nấu ăn theo tên món hoặc nguyên liệu.
 - Khám phá các công thức nấu ăn đa dạng từ nhiều nền ẩm thực khác nhau.
 - Lọc công thức dựa trên nhiều tiêu chí như: thời gian nấu, số lượng nguyên liệu, lượng calo, chế độ ăn kiêng (ăn chay, thuần chay, ít béo,...), loại bữa ăn, loại món ăn, và nền ẩm thực.
